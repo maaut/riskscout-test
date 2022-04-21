@@ -14,6 +14,8 @@ class App
     add_product(Product.new("AP1", "Apples", 6.00))
     add_product(Product.new("CF1", "Coffee", 11.23))
     add_product(Product.new("MK1", "Milk", 4.75))
+
+    @products.each { |product| puts product.to_s }
   end
 
   def add_product(product)
